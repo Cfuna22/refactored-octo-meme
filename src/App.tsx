@@ -130,7 +130,18 @@ const HeroSection = () => {
   }, [currentIndex, fullText]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-10">
+      {/* <section className="flex flex-col items-center text-center py-10"> */}
+      {/* Profile Picture */}
+      <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-4">
+        <img
+          src="/profile.png"
+          alt="Profile Picture"
+          width={160}
+          height={160}
+          className="object-cover"
+        />
+      </div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
@@ -222,29 +233,76 @@ const AboutSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Job Platform Backend",
-      description: "A comprehensive backend system for a job marketplace connecting handymen with clients. Features include user authentication, job posting, bidding system, and payment processing.",
-      technologies: ["NestJS", "TypeScript", "Supabase", "Drizzle ORM", "PostgreSQL"],
+      title: "BFFLend",
+      description:
+        "A peer-to-peer rental marketplace connecting users to rent or lend items securely.",
+      technologies: [
+        "Next.js 14",
+        "NestJS",
+        "Tailwind CSS",
+        "Supabase",
+        "Drizzle ORM",
+        "PostgreSQL",
+      ],
       status: "In Development",
       highlights: [
-        "RESTful API with comprehensive endpoints",
-        "Real-time notifications system",
-        "Secure authentication & authorization",
-        "Database optimization for scalability"
-      ]
+        "Monorepo setup",
+        "Authentication with Supabase",
+        "Modern UI with Tailwind",
+        "Secure backend APIs",
+      ],
+    },
+    {
+      title: "Birnes Haven",
+      description:
+        "A backend system powering property listings, bookings, payments, and admin features.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "Drizzle ORM",
+        "Supabase",
+        "PostgreSQL",
+      ],
+      status: "Completed",
+      highlights: [
+        "Full CRUD for properties",
+        "Admin dashboard APIs",
+        "Secure role-based auth",
+        "Payment & booking modules",
+      ],
+    },
+    {
+      title: "Job Platform Backend",
+      description:
+        "Comprehensive backend for a job marketplace connecting handymen with clients.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "Supabase",
+        "Drizzle ORM",
+        "PostgreSQL",
+      ],
+      status: "In Development",
+      highlights: [
+        "RESTful API",
+        "Real-time notifications",
+        "Secure auth",
+        "Optimized DB queries",
+      ],
     },
     {
       title: "PLP-Style Learning Platform",
-      description: "Contributing to an educational platform backend that supports course management, student progress tracking, and interactive learning features.",
+      description:
+        "Contributing to an educational platform backend that supports course management.",
       technologies: ["NestJS", "PostgreSQL", "TypeScript", "REST APIs"],
       status: "Contributing",
       highlights: [
-        "Course content management system",
+        "Course content system",
         "Student progress analytics",
-        "Quiz and assessment engine",
-        "Multi-role user management"
-      ]
-    }
+        "Quiz engine",
+        "Multi-role management",
+      ],
+    },
   ];
 
   return (
