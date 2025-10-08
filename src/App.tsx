@@ -485,19 +485,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "abelsifuna515@gmail.com",
+      value: "abelsifuna",
       href: "mailto:abelsifuna515@gmail.com",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/Cfuna22",
+      value: "github",
       href: "https://github.com/Cfuna22",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "https://linkedin.com/in/abel-sifuna-b0a928353",
+      value: "linkedin",
       href: "https://linkedin.com/in/abel-sifuna-b0a928353",
     },
   ];
