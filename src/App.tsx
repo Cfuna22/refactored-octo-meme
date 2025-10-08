@@ -233,6 +233,27 @@ const AboutSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Qatalyst",
+      description:
+        "A modern project management platform for tracking team progress, analytics, and automation.",
+      technologies: [
+        "Next.js 15",
+        "NestJS",
+        "TypeScript",
+        "Supabase",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "Tailwind CSS",
+      ],
+      status: "Completed",
+      highlights: [
+        "Real-time task updates",
+        "Automated analytics dashboard",
+        "Team collaboration features",
+        "API-driven backend with NestJS",
+      ],
+    },
+    {
       title: "BFFLend",
       description:
         "A peer-to-peer rental marketplace connecting users to rent or lend items securely.",
